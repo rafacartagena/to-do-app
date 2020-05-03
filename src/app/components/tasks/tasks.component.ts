@@ -35,6 +35,7 @@ export class TasksComponent implements OnInit {
         this.titulo = '';
       });
   }
+
   deleteTask(id) {
     const response = confirm('¿Estás seguro de que deseas elimiarlo?');
     if (response) {
@@ -52,6 +53,7 @@ export class TasksComponent implements OnInit {
         });
     }
   }
+  
   updateStatus(task: Task) {
     const newTask = {
       //_id: task._id,
